@@ -1,0 +1,261 @@
+object Form1: TForm1
+  Left = 312
+  Height = 639
+  Top = 139
+  Width = 897
+  BorderIcons = [biSystemMenu, biMinimize]
+  BorderStyle = bsDialog
+  Caption = 'Four Square'
+  ClientHeight = 639
+  ClientWidth = 897
+  OnCreate = FormCreate
+  LCLVersion = '1.4.4.0'
+  object Memo1: TMemo
+    Left = 16
+    Height = 90
+    Top = 48
+    Width = 336
+    Lines.Strings = (
+      'Memo1'
+      ''
+      ''
+      ''
+      ''
+      ''
+      ''
+      ''
+      ''
+      ''
+      ''
+      ''
+      ''
+      ''
+      ''
+      ''
+      ''
+      ''
+    )
+    OnChange = Memo1Change
+    ScrollBars = ssVertical
+    TabOrder = 0
+  end
+  object Memo2: TMemo
+    Left = 16
+    Height = 90
+    Top = 248
+    Width = 336
+    Lines.Strings = (
+      'Memo2'
+      ''
+      ''
+      ''
+      ''
+      ''
+      ''
+      ''
+      ''
+      ''
+      ''
+      ''
+      ''
+      ''
+      ''
+      ''
+      ''
+      ''
+    )
+    ScrollBars = ssVertical
+    TabOrder = 1
+  end
+  object Memo3: TMemo
+    Left = 16
+    Height = 90
+    Top = 400
+    Width = 150
+    Lines.Strings = (
+      'Memo3'
+      ''
+      ''
+      ''
+      ''
+      ''
+      ''
+      ''
+      ''
+      ''
+      ''
+      ''
+      ''
+      ''
+      ''
+      ''
+      ''
+      ''
+    )
+    MaxLength = 25
+    OnChange = Memo3Change
+    TabOrder = 2
+  end
+  object Memo4: TMemo
+    Left = 202
+    Height = 90
+    Top = 400
+    Width = 150
+    Lines.Strings = (
+      'Memo4'
+      ''
+      ''
+      ''
+      ''
+      ''
+      ''
+      ''
+      ''
+      ''
+      ''
+      ''
+      ''
+      ''
+      ''
+    )
+    MaxLength = 25
+    OnChange = Memo4Change
+    TabOrder = 3
+  end
+  object StringGrid1: TStringGrid
+    Left = 376
+    Height = 500
+    Top = 16
+    Width = 500
+    ColCount = 11
+    DefaultColWidth = 45
+    DefaultRowHeight = 45
+    FixedCols = 0
+    FixedRows = 0
+    Font.Height = -13
+    Font.Name = 'Lucida Grande'
+    ParentFont = False
+    RowCount = 11
+    TabOrder = 4
+    TitleFont.Height = -13
+    TitleFont.Name = 'Lucida Grande'
+    OnDrawCell = StringGrid1DrawCell
+  end
+  object RadioButton1: TRadioButton
+    Left = 16
+    Height = 18
+    Top = 152
+    Width = 67
+    Caption = 'Encrypt'
+    Checked = True
+    OnChange = RadioButton1Change
+    TabOrder = 6
+    TabStop = True
+  end
+  object RadioButton2: TRadioButton
+    Left = 136
+    Height = 18
+    Top = 152
+    Width = 69
+    Caption = 'Decrypt'
+    OnChange = RadioButton2Change
+    TabOrder = 5
+  end
+  object Label1: TLabel
+    Left = 16
+    Height = 20
+    Top = 368
+    Width = 38
+    Caption = 'Keys'
+    Font.Height = -17
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 16
+    Height = 20
+    Top = 16
+    Width = 186
+    Caption = 'Text to En- or Decrypt'
+    Font.Height = -17
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label3: TLabel
+    Left = 16
+    Height = 20
+    Top = 216
+    Width = 184
+    Caption = 'En- or Decrypted Text'
+    Font.Height = -17
+    ParentColor = False
+    ParentFont = False
+  end
+  object Button1: TButton
+    Left = 256
+    Height = 18
+    Top = 152
+    Width = 75
+    Caption = '^'
+    Font.Height = -30
+    OnClick = Button1Click
+    ParentFont = False
+    TabOrder = 7
+  end
+  object CheckBox1: TCheckBox
+    Left = 16
+    Height = 18
+    Top = 184
+    Width = 126
+    Caption = 'Auto En-/Decrypt'
+    Checked = True
+    OnChange = CheckBox1Change
+    State = cbChecked
+    TabOrder = 8
+  end
+  object Button2: TButton
+    Left = 184
+    Height = 18
+    Top = 184
+    Width = 147
+    Caption = 'En-/Decrypt'
+    Font.Height = -30
+    OnClick = Button2Click
+    ParentFont = False
+    TabOrder = 9
+    Visible = False
+  end
+  object Memo5: TMemo
+    Left = 16
+    Height = 68
+    Top = 500
+    Width = 336
+    Lines.Strings = (
+      'Memo5'
+      ''
+      ''
+      ''
+      ''
+      ''
+    )
+    OnChange = Memo5Change
+    TabOrder = 10
+  end
+  object Button3: TButton
+    Left = 16
+    Height = 25
+    Top = 576
+    Width = 336
+    Caption = 'Key Generator'
+    OnClick = Button3Click
+    TabOrder = 11
+  end
+  object ProgressBar1: TProgressBar
+    Left = 16
+    Height = 20
+    Top = 608
+    Width = 336
+    Max = 50
+    TabOrder = 12
+  end
+end
